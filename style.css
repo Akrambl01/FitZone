@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-base: rgb(20, 219, 20);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-base);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #15141b;
+}
+body{
+    font-family:  "Bai Jamjuree", sans-serif;
+}
+
+.crad{
+    backdrop-filter: blur(25%);
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item a {
+    text-decoration: none;
+    color: rgb(206, 206, 209);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    /* *--------------------- */
+    /* background: linear-gradient( var(--color-base) 0 0) 0% 100% /var(--d, 0) 3px no-repeat; */
+    width: fit-content;
+    position: relative;
+    z-index: 100;
+    transition: all 0.4s;
+}
+
+.nav-item a:hover {
+    color: var(--color-base);
+    /* --d:100%; */
+}
+
+.nav-item a::before {
+    content: '';
+    background-color: var(--color-base);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.nav-item a:hover::before{
+    width: 92%;
+}
+
+.navbar-brand{
+    transition: all 2s ;
+}
+.navbar-brand:hover{
+    transform: rotate(360deg);
+}
+
+.search {
+    height: 45px !important;
+    outline: none !important;
+    border: 2px solid var(--color-base) !important;
+    background-color: transparent !important;
+    border-radius: 20px 0px 0px 20px !important;
+    border-right: none !important;
+    box-shadow: none !important;
+}
+
+.btn1 {
+    height: 45px !important;
+    outline: none !important;
+    border: none !important;
+    background-color: var(--color-base) !important;
+    color: white !important;
+    border-radius: 0px 20px 20px 0px !important;
+    transition: all 0.4s !important;
+}
+
+.btn1:hover {
+    background-color: rgb(13, 172, 13) !important;
+}
+
+.bi-cart-plus {
+    font-size: 30px;
+    color: rgb(25, 161, 25);
+    cursor: pointer;
+    padding-top: 5px;
+    transition: all 0.4s;
+}
+
+.bi-cart-plus:hover {
+    color: var(--color-base);
+}
+
+.main {
+    height: 110vh;
+    width: 100%;
+    clip-path: polygon(0 0,100% 0%, 100% 100%,80% 95%,0 100%);
+}
+
+.nav1{
+    backdrop-filter: blur(16px);
+}
+
+.bg-img1{
+    background: url(images/banner.jpg) no-repeat;
+    background-size: 100% 100% ;
+    height: 100%;
+    width: 100%;
+    filter: brightness(45%);
+}
+
+.main h1 {
+    font-size: 4rem;
+}
+
+.main p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main p:nth-child(2) {
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.mbtn1{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    color: white;
+    border: none;
+    background: var(--color-base);
+    border-radius: 50px;
+    transition: all 0.4s;
+
+}
+
+.mbtn1:hover{
+    background-color: rgb(13, 172, 13);
+}
+
+.mbtn2 {
+    height: 50px;
+    width: 25%;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-base);
+    border: 1px solid var(--color-base);
+    border-radius: 50px;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    border-color: var(--color-base);
+    transition: 0.5s;
+}
+.mbtn2:hover{
+    border-color: var(--color-base);
+    color: white;
+}
+
+.mbtn2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-base);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.mbtn2:hover::before {
+    width: 100%;
+}
+
+.line1 {
+    margin-right: 5px;
+    padding: 5px 1.3px 0px 1.3px;
+    background-color: var(--color-base);
+}
+
+.fit{
+    color: var(--color-base);
+}
+
+.line2 {
+    height: 6px;
+    width: 30%;
+    background: var(--color-base);
+    display: inline-block;
+}
+
+/* =====about===== */
+
+.bg-img2{
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(90%);
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about p:nth-child(2) {
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.about .card{
+    box-shadow: 0 0 4px white;
+}
+
+.bgb{
+    background-color: #15141b;
+}
+
+.line3{
+    height: 6px;
+    width: 30%;
+    background-color: white;
+    display: inline-block;
+}
+
+.welcome h2 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.welcome .card {
+    background-color: #222831;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.welcome .card:hover{
+    box-shadow: -4px 4px 0 var(--color-base);
+}
+
+.welcome i {
+    font-size: 45px;
+    color: var(--color-base);
+}
+
+.welcome h2 {
+    font-weight: lighter;
+    padding: 10px 0px;
+}
+
+/* ------procucts------ */
+.product h1 {
+    font-weight: bold;
+}
+
+.product p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product p:nth-child(2) {
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.star {
+    text-align: end;
+    color: orange;
+}
+
+.product .card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.406);
+    backdrop-filter: blur(25%);
+    box-shadow: 0 0 2px rgb(220, 228, 220);
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.product .card:hover{
+    transform: scale(103%);
+}
+
+.product .card img:hover{
+    transform: scale(105%);
+}
+
+.head1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.per1{
+    color: rgb(168, 162, 162);
+}
+
+.btnc {
+    height: 50px;
+    width: 50%;
+    outline: none;
+    border: none;
+    color: white;
+    background: var(--color-base);
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.btnc:hover {
+    border: 1px solid var(--color-base);
+    color: var(--color-base);
+    background: transparent;
+}
+
+.btnc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.158);
+    z-index: -1;
+    transition: all 0.6s;
+}
+
+.btnc:hover::before {
+    width: 100%;
+}
+
+.card-body img{
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* ---------discount--------- */
+.discount{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.406);
+    backdrop-filter: blur(25%);
+}
+
+.dbtn {
+    height: 50px;
+    width: 75%;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-weight: lighter;
+    transition: all 0.4s;
+}
+
+/* -------store------ */
+.dbtn{
+    font-weight: 500;
+}
+.dbtn:hover {
+    background-color: rgb(183, 183, 183);
+}
+
+.store h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.store p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.store p:nth-child(2) {
+    font-size: 18px;
+    color: gray;
+}
+
+.store i{
+    font-size: 45px;
+}
+.store .card{
+    background-color: #222831;
+    color: white;
+    border-radius: 0;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+.store .card:hover{
+    color: white;
+    box-shadow: -8px 8px 0 #222831;
+}
+
+.store .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #218d21;
+    z-index: -1;
+    transition: all 0.6s;
+}
+
+.store .card:hover::before {
+    width: 100%;
+}
+
+
+.store .card:hover .per1{
+    color: white;
+}
+
+
+/* --------seller-------- */
+.seller .card{
+    background-color: rgba(0, 0, 0, 0.406);
+    backdrop-filter: blur(25%);
+    box-shadow: 0 0 2px rgb(220, 228, 220);
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.seller .card:hover{
+    box-shadow: -2px 2px 0 var(--color-base);
+}
+.seller h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+img.new-img{
+    width: 200px;
+}
+
+.seller i {
+    color: orange;
+}
+.seller .card{
+    border-radius: o;
+    border: none;
+}
+
+/* ---------contact----------- */
+.contact{
+    border-top: 1px solid grey;
+    background: rgb(49, 51, 49);
+    backdrop-filter: blur( 25px ) ;
+    background-image: radial-gradient(at 5% 63%, #093009 0px, transparent 50%), radial-gradient(at 35% 87%, hsla(26, 0%, 0%, 1) 0px, transparent 50%), radial-gradient(at 80% 2%, hsla(188, 0%, 0%, 1) 0px, transparent 50%), radial-gradient(at 39% 26%, hsla(355, 0%, 0%, 1) 0px, transparent 50%), radial-gradient(at 86% 44%, #172a1d 0px, transparent 50%), radial-gradient(at 17% 91%, rgb(15, 22, 15) 0px, transparent 50%), radial-gradient(at 65% 2%, #16211a 0px, transparent 50%), radial-gradient(at 96% 4%, rgb(30, 38, 32) 0px, transparent 50%); 
+}
+
+.contact h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.contact p{
+    color: white;
+}
+
+.circle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.contact input{
+    height: 40px;
+    width: 100%;
+    /* border: none; */
+    outline: none;
+    background-color: rgb(250, 250, 250);
+    margin-top: 12px;
+    padding: 10px;
+}
+.contact textarea{
+    height: 100px;
+    width: 100%;
+    /* border: none; */
+    outline: none;
+    background-color: white;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.cbtn{
+    height: 50px;
+    width: 65%;
+    outline: none;
+    /* border: none; */
+    background: white;
+    font-weight: lighter;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.cbtn:hover{
+    background-color: rgb(185, 185, 185);
+
+}
+
+/* ---------footer--------- */
+
+.footer{
+    background: rgb(61, 58, 58);
+}
+
+.s1{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7px;
+    margin-left: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.s1:hover{
+    background-color: var(--color-base);
+    border: none;
+}
+
+.footer p{
+    color: rgb(13, 172, 13);
+    color: white;
+}
+
+
+@media  screen and (min-width:991px)  {
+    .vit{
+        width: 133px !important;
+    
+    }
+   
+}
+
+@media screen and (min-width:1200px) {
+    .vit{
+        width: 160px !important;
+    }
+   
+}
+
+ @media screen and (max-width:575px) {
+    .product .card:hover{
+        transform: scale(100%);
+    }
+
+    .pm{
+        padding-top: 100px;
+    }
+   .bg-img1{
+        height: 82%;
+        border-bottom: 0.5px solid gray;
+    }
+
+    .product .card{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .product .card img:hover{
+        scale: 115%;
+    }
+
+    .welcome .card{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .store .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .seller .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .store .card:hover{
+        box-shadow: none;
+    }
+
+} 
